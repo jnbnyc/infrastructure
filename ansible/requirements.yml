@@ -1,0 +1,11 @@
+---
+# https://docs.ansible.com/ansible/latest/galaxy.html
+
+# from GitHub, overriding the name
+- src: https://github.com/jnbnyc/ansible-role-service-account.git
+  name: service-account
+
+# from GitHub, overriding the name and specifying a specific tag
+- src: https://github.com/jnbnyc/ansible-role-ansible-client.git
+  version: master
+  name: ansible-client
