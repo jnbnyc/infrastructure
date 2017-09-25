@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+_help="script/console is used to open a console for your application."
+
+# docker-compose exec -i -t ${CONTAINER_NAME} bash

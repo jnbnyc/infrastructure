@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+_help="script/bootstrap is used solely for fulfilling dependencies of the project.\n\
+The goal is to make sure all required dependencies are installed."
+
+_KERNEL=$(uname --kernel-name)
+
+if [ "$_KERNEL" == "Darwin" ]; then
+  source bootstrap_osx
+else
+  echo "$_KERNEL not supported at this time"
+fi

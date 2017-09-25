@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+_help="script/setup is used to set up a project in an initial state. This is typically run after an initial clone, or, to reset the project back to its initial state.\n\
+This is also useful for ensuring that your bootstrapping actually works well."
+
+[ -f "bootstrap" ] && bootstrap
