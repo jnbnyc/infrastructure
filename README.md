@@ -1,1 +1,3 @@
 # project title
+
+#### [License](LICENSE)
