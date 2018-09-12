@@ -1,2 +1,5 @@
 ---
 # master site yml for project
+
+- import_playbook: playbooks/kubernetes.yml
+# - import_playbook: playbooks/deploy.yml

@@ -1,3 +1,3 @@
-# project title
+# infrastructure
 
-#### [License](LICENSE)
+#### [License (MIT)](LICENSE)

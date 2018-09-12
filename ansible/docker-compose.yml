@@ -1,0 +1,18 @@
+---
+version: '3'
+services:
+  ansible:
+    build: .
+    container_name: ansible
+    entrypoint: /app/entrypoint.sh
+    environment:
+      - DEPLOY_INVENTORY_PATH=eks
+      # - DEPLOY_APP_NAME=nginx
+    volumes:
+      - ./:/app
+      - ~/.kube/config:/root/.kube/config:ro
+      # kubeconfig references files in the hosts path
+      # so we need to provide the same location in the container
+      - ~/.minikube:${HOME}/.minikube
+      - ~/.aws:/root/.aws:ro
+    working_dir: /app

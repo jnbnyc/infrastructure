@@ -1,0 +1,12 @@
+---
+version: '3'
+services:
+  ansible:
+    image: ansible_ansible
+    container_name: eks
+    entrypoint: bash -c 'exec ansible-playbook /app/playbooks/kubernetes.yml -i /app/inventory/eks --tags deploy'
+    volumes:
+      - ${PWD}/../../ansible:/app
+      - ~/.kube/conf.d/eks.config:/root/.kube/config:ro
+      - ~/.aws:/root/.aws:ro
+    working_dir: /app

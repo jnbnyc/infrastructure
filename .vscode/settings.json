@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "**/ansible/*.yml": "ansible",
+        "**/ansible/**/*.yml": "ansible",
+        "*.j2": "jinja",
+        "**/inventory/**/main": "ini",
+    },
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.6"
+}

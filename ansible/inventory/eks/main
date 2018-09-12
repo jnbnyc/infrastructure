@@ -1,0 +1,16 @@
+#!ini
+
+[local]
+localhost ansible_connection=local
+
+[environment_eks:children]
+local
+
+[all:children]
+environment_eks
+
+[all:vars]
+datacenter=kubernetes
+environment_class=eks
+environment_key=eks
+environment_name=eks

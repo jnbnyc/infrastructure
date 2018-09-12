@@ -1,0 +1,9 @@
+---
+
+- hosts: local
+  gather_facts: no
+  # important to note that tasks here execute AFTER roles do
+  tasks: {}
+  roles:
+    - { role: kube_config, tags: ["provision"] }
+    - { role: helm_deploy, tags: ["provision", "deploy"] }

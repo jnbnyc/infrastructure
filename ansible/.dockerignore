@@ -1,0 +1,7 @@
+*
+!ansible.cfg
+!*.yml
+!entrypoint.sh
+!group_vars
+!inventory
+!roles/kube_config

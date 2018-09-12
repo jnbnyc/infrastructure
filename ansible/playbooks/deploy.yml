@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  gather_facts: no
+  roles:
+    # - role: kube-deploy
+    #   app_name: "{{ deploy_app_name }}"
+    #   app_version: "{{ deploy_app_version }}"
+    - role: helm_deploy
+      app_name: "{{ deploy_app_name }}"
+      app_version: "{{ deploy_app_version }}"
+  tags: ["deploy"]
